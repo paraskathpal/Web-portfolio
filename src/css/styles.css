@@ -362,3 +362,67 @@ textarea {
   height: 2px;
   background-color: var(--border-color);
 }
+
+.experience {
+  padding-block: 2rem;
+  background-color: var(--white-color);
+  clip-path: polygon(44% 0%, 100% 13%, 100% 93%, 57% 100%, 0% 92%, 0% 13%);
+}
+
+.skills-title-container {
+  text-align: center;
+  margin-inline-end: 1rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 100vw;
+  height: 70vh;
+  padding: 2.5rem;
+}
+
+.grid-item-one {
+  grid-area: 1 / 4 / 4 / 5;
+  background-color: var(--body-color);
+  margin: 0.5rem;
+}
+
+.grid-item-two {
+  grid-area: 4 / 2 / 5 / 5;
+  background-color: var(--body-color);
+  margin: 0.5rem;
+}
+
+.grid-item-three {
+  grid-area: 2 / 1 / 5 / 2;
+  background-color: var(--body-color);
+  margin: 0.5rem;
+}
+
+.grid-item-four {
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: var(--body-color);
+  margin: 0.5rem;
+}
+
+.grid-item-five {
+  grid-area: 1 / 1 / 2 / 3;
+  background-color: var(--body-color);
+  margin: 0.5rem;
+}
+
+.grid-item-six {
+  grid-area: 1 / 3 / 3 / 4;
+  background-color: var(--body-color);
+  margin: 0.5rem;
+}
+
+.grid-item-seven {
+  grid-area: 3 / 2 / 4 / 4;
+  background-color: var(--body-color);
+  margin: 0.5rem;
+}
