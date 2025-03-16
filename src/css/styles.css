@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto";
+  font-family: "Jost";
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -12,7 +13,7 @@
   --text-color: hsl(var(--hue), 4%, 20%);
   --body-color: hsl(var(--hue), 30%, 92%);
   --container-color: rgb(251, 251, 251);
-  --border-color: rgb(var(--hue), 4%, 16%);
+  --border-color: hsl(var(--hue), 4%, 16%);
   --white-color: rgb(255, 255, 255);
   --shadow-color: hsl(var(--hue), 80%, 10%, 0.2);
 
@@ -237,4 +238,114 @@ textarea {
   width: clamp(21rem, 12.6rem + 33.6vw, 42rem);
   border-radius: 0 0100vw 100vw;
   overflow: hidden;
+}
+
+.home-data {
+  border: 2px solid var(--border-color);
+  background-color: var(--container-color);
+  box-shadow: 4px 4px var(--shadow-color);
+  padding-inline: 1.25rem;
+  width: 240px;
+  height: 80px;
+  border-radius: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+}
+
+.home-data-one {
+  bottom: 20%;
+  left: clamp(-3.75rem, -4.65rem + 3.6vw, -1.5rem);
+}
+
+.home-data-two {
+  bottom: 12%;
+  right: clamp(-3rem, -5.2rem + 8.8vw, -2.5rem);
+}
+
+.home-data-number {
+  color: var(--title-color);
+  font-family: var(--second-font);
+  font-size: 2.25rem;
+  font-weight: var(--font-bold);
+  text-align: center;
+}
+
+.home-data-title {
+  font-size: var(--small-size);
+}
+
+.home-data-title span {
+  color: var(--first-color);
+}
+
+.home-desc {
+  font-size: var(--large-size);
+  max-width: 520px;
+}
+
+.home-socials {
+  margin-block: 1.75rem 2.5rem;
+}
+
+.home-btns {
+  display: flex;
+  align-items: center;
+  column-gap: 4.5rem;
+}
+
+.btn, .home-link {
+  display: inline-block;
+  color: var(--title-color);
+  font-size: var(--small-size);
+  font-weight: var(--font-bold);
+  position: relative;
+}
+
+.btn {
+  border: 2px solid var(--border-color);
+  box-shadow: 4px 4px var(--shadow-color);
+  padding: 1rem 2.5rem;
+  border-radius: 3rem;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background-color: var(--first-color);
+  border-radius: inherit;
+  transform: scale(0.3);
+  filter: blur(10px);
+  opacity: 0;
+  z-index: -10;
+  transition: all 0.7s var(--transition);
+}
+
+.btn:hover {
+  color: var(--white-color);
+  transition: color 0.7s var(--transition);
+}
+
+.btn:hover::before {
+  transform: scale(1);
+  filter: blur(0);
+  opacity: 1;
+}
+.home-link::before {
+  content: '';
+  position: absolute;
+  left: -124%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 2px;
+  background-color: var(--border-color);
+}
+
+.skills {
+  height: 100vh;
+  scroll-behavior: smooth;
 }
