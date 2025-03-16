@@ -174,9 +174,16 @@ textarea {
 }
 /* - - - - - - - - - REUSABLE - - - - - - - - - - */
 
-.social-links {
+.social-link {
   display: inline-flex;
   column-gap: 1.5rem;
+}
+
+.leetcode {
+  background-color: black;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  width: 39px;
 }
 
 .social-link {
@@ -190,7 +197,7 @@ textarea {
 }
 
 .section {
-  padding-block: 7rem;
+  padding-block: 7rem 0rem;
 }
 
 .home-container {
@@ -284,10 +291,20 @@ textarea {
 .home-desc {
   font-size: var(--large-size);
   max-width: 520px;
+  margin-bottom: 4rem;
 }
 
-.home-socials {
-  margin-block: 1.75rem 2.5rem;
+.home-social {
+  display: flex;
+  margin-block: 1.75rem;
+  width: 400px;
+  justify-content: center;
+  font-size: 42px;
+}
+
+.home-social .social-link {
+  font-size: 42px;
+  margin-inline-end: 2.5rem;
 }
 
 .home-btns {
@@ -296,7 +313,8 @@ textarea {
   column-gap: 4.5rem;
 }
 
-.btn, .home-link {
+.btn,
+.home-link {
   display: inline-block;
   color: var(--title-color);
   font-size: var(--small-size);
@@ -312,7 +330,7 @@ textarea {
 }
 
 .btn::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 2px;
   background-color: var(--first-color);
@@ -335,7 +353,7 @@ textarea {
   opacity: 1;
 }
 .home-link::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -124%;
   top: 50%;
@@ -343,9 +361,4 @@ textarea {
   width: 40px;
   height: 2px;
   background-color: var(--border-color);
-}
-
-.skills {
-  height: 100vh;
-  scroll-behavior: smooth;
 }
