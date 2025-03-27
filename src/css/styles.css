@@ -381,14 +381,32 @@ textarea {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   width: 100vw;
-  height: 70vh;
+  height: 80vh;
   padding: 2.5rem;
+  position: relative;
+}
+
+.grid-item {
+  background-color: var(--body-color);
+  margin: 0.5rem;
+  position: relative;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.2); /* Initial shadow state */
+}
+
+.grid-item-one:hover {
+  transform: scale(1.3) translate(-15%, 17%);
+  z-index: 10;
+  transition: transform 1.1s var(--transition) 1s,
+    background-color 0.1s var(--transition) 1s;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+  background-color: var(--white-color);
 }
 
 .grid-item-one {
   grid-area: 1 / 4 / 4 / 5;
   background-color: var(--body-color);
   margin: 0.5rem;
+  transition: transform 0.1s var(--transition);
 }
 
 .grid-item-two {
@@ -397,10 +415,28 @@ textarea {
   margin: 0.5rem;
 }
 
+.grid-item-two:hover {
+  transform: scale(1.3) translate(-11.5%, -14%);
+  z-index: 10;
+  transition: transform 0.8s var(--transition);
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+  background-color: var(--white-color);
+}
+
 .grid-item-three {
   grid-area: 2 / 1 / 5 / 2;
   background-color: var(--body-color);
   margin: 0.5rem;
+}
+
+.grid-item-three:hover {
+  transform: scale(1.5) translate(-5.5%, -14%);
+  z-index: 10;
+  transition: transform 0.8s var(--transition);
+  /* width: 60vw;
+  height: 15vh; */
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+  background-color: var(--white-color);
 }
 
 .grid-item-four {
@@ -409,20 +445,51 @@ textarea {
   margin: 0.5rem;
 }
 
+.grid-item-four:hover {
+  transform: scale(1.3) translate(-15%, 17%);
+  z-index: 10;
+  transition: transform 0.8s var(--transition);
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+  background-color: var(--white-color);
+}
+
 .grid-item-five {
   grid-area: 1 / 1 / 2 / 3;
   background-color: var(--body-color);
   margin: 0.5rem;
 }
 
+.grid-item-five:hover {
+  transform: scale(1.3) translate(-15%, 17%);
+  z-index: 10;
+  transition: transform 0.8s var(--transition);
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+  background-color: var(--white-color);
+}
 .grid-item-six {
   grid-area: 1 / 3 / 3 / 4;
   background-color: var(--body-color);
   margin: 0.5rem;
 }
 
+.grid-item-six:hover {
+  transform: scale(1.3) translate(-15%, 17%);
+  z-index: 10;
+  transition: transform 0.8s var(--transition);
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+  background-color: var(--white-color);
+}
+
 .grid-item-seven {
   grid-area: 3 / 2 / 4 / 4;
   background-color: var(--body-color);
   margin: 0.5rem;
+}
+
+.grid-item-seven:hover {
+  transform: scale(1.3) translate(-15%, 17%);
+  z-index: 10;
+  transition: transform 0.8s var(--transition);
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+  background-color: var(--white-color);
 }
