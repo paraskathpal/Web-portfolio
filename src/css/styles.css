@@ -366,7 +366,7 @@ textarea {
 .experience {
   padding-block: 2rem;
   background-color: var(--white-color);
-  clip-path: polygon(44% 0%, 100% 13%, 100% 93%, 57% 100%, 0% 92%, 0% 13%);
+  clip-path: polygon(36% 0%, 100% 13%, 100% 89%, 62% 100%, 0% 88%, 0% 17%);
 }
 
 .skills-title-container {
